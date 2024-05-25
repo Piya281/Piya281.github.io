@@ -1,0 +1,572 @@
+<html>
+<head>
+<title>Home</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+
+body{
+ font-family: comic sans ms;
+ background: url('images/b5.jpg') right no-repeat;
+ background-size: cover;
+ 
+}
+
+
+
+.navbar
+{
+background: orange;
+border-bottom: 2px solid orange;
+height: 90px;
+}
+
+.menu
+{
+ float: right;
+ 
+}
+
+.menu li
+{
+display: inline-block;
+list-style: none;
+margin-top: 10px;
+
+
+}
+
+
+.menu li a 
+{
+text-decoration: none;
+color: black;
+font-size: 22px;
+font-weight: bold;
+display: block;
+padding: 15px;
+}
+.menu li a:hover
+{
+text-transform: uppercase;
+transform: translateY(-10px);
+
+}
+
+.submenu
+{
+display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: 10px;
+margin-left: -2px;
+}
+
+.menu li:hover .submenu ul
+{
+display: block;
+margin: 10px;
+}
+
+.menu li:hover .submenu ul li
+{
+display: block;
+width: 80px;
+padding: 1px;
+
+background: orange;
+border-radius: 0;
+text-align: center;
+}
+
+.menu li:hover .submenu ul li a
+{
+padding: 8px;
+}
+span{
+  color: black;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: orange;
+  width: 34.5%;
+}
+
+
+
+img
+{
+width: 100px;
+height: 110px;
+margin-top: -20px;
+margin-bottom: 5px;
+margin-right: 100px;
+margin-left: 5px;
+background: black;
+
+
+}
+.mySlides img
+{
+width: 100%;
+height:600px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: -1px;
+margin-left: -1px;
+
+}
+.circle
+{
+margin-left: 550px;
+margin-right: 120px;
+margin-bottom: 30px;
+margin-top: -10px;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-left: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: orange;
+}
+
+h1
+{
+color: orange;
+text-align: center;
+margin-top: 30px;
+}
+.row
+{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.row .column{
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 30px;
+display: grid;
+
+width: 330px;
+height: 330px;
+}
+.column {
+  
+  width: 33.33%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.row .column img
+{
+margin-top: 20px;
+margin-right: -10px;
+width: 330px;
+height: 330px;
+border-radius: 20%;
+}
+
+.row .column img:hover
+{
+transform: translateY(-10px);
+}
+.row .column p
+{
+color: orange;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+}
+
+.foot{
+display: flex;
+justify-content: flex-end;
+align-item: flex-end;
+min-height: 30vh;
+opacity: 0.9;
+margin-top: 190px;
+}
+
+footer
+{
+position: relative;
+width:100%;
+background: orange;
+min-height: 50px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+.foot .socialicon, .menu2
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-item: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+.foot .socialicon li
+{
+list-style: none;
+
+}
+.foot .socialicon li a
+{
+font-size: 2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+
+.foot .socialicon li a:hover
+{
+transform: translateY(-10px);
+}
+.menu2 li
+{
+list-style: none;
+}
+
+.menu2 li a
+{
+font-size: 1.2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+
+.menu2 li a:hover
+{
+opacity: 1;
+}
+
+footer p
+{
+margin-top: 10px;
+margin-bottom: 20px;
+font-size: 15px;
+font-weight: bold;
+}
+
+.admin
+{
+	position:fixed;
+	width:50px;
+	height:150px;
+	top: 100px;
+	right: 0px;
+	float: right;
+	text-decoration: none;
+	background-color:orange;
+	color: black;
+	border-radius:2px;
+	text-align:center;
+    font-size:20px;
+	box-shadow: 2px 2px 3px #999;
+
+}
+
+.floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+}
+
+@media (max-width: 924px)
+{
+
+ span
+ {
+  display: block;
+  margin-top: 15px;
+  margin-left: -50px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.navbar
+ {
+  padding: 0 20px;
+  background: orange;
+}
+.menu
+ {
+  position: absolute;
+  width: 30%;
+  height: 165%;
+  margin-top: 70px;
+  left: 0;
+  transition: all 0.5s;
+  background: orange;
+  
+ 
+}
+.menu li a
+{
+color: black;
+padding: 8px;
+}
+
+.menu li a:hover
+{
+text-transform: uppercase;
+border-left: 1px solid black;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ 
+.menu li
+{
+ display: block;
+ margin-left: 5px;
+}
+
+.menu 
+{
+ display: none;
+}
+
+
+
+
+.navbar img
+{
+float: right;
+width: 100px;
+height: 109px;
+margin-right: -25px;
+}
+
+.about
+{
+border-border: 1px solid orange;
+background: orange;
+margin-top: 20px;
+width: 40%;
+margin-left: 200px;
+margin-right: 80px;
+}
+.about img
+{
+height: 300px;
+width: 300px;
+margin-top: 40px;
+}
+
+.content h1
+{
+margin-top: 70px;
+}
+.content p
+{
+margin-top: 30px;
+font-size: 18;
+}
+.mySlides img
+{
+height: 400px;
+}
+.circle
+{
+margin-left: 180px;
+}
+
+h1
+{
+
+font-size: 24;
+margin-bottom: -30px;
+}
+.row
+{
+margin-top: -20px;
+}
+.column
+{
+margin-top: 150px;
+
+}
+
+.admin
+{
+right: 0px;
+}
+}
+
+
+</style>
+</head>
+ <body>
+  
+    <div class="navbar">
+    
+	<span onClick="myFunction()">&#9776;</span>
+	<img src="images/logo.jpeg">
+	<div class="menu" id="list">
+	 <nav>
+	   	<li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+		<li><a href="./order.html">Order</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+	  </nav>
+	</div>
+   </div>
+   <a href="./login1.html" class="admin"> <i class="fa fa-user-circle-o" style="font-size:24px;color: black"><br>A<br>D<br>M<br>I<br>N</i></a>
+   <a href="https://api.whatsapp.com/send?phone=9764768981&text=Hello%21%20." class="floating" target="_blank"><i class="fa fa-whatsapp float-button"></i></a>
+
+  <div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="images/o3.jpeg">
+</div>
+
+<div class="mySlides">
+  <img src="images/c1.jpeg">
+  </div>
+
+<div class="mySlides">
+  <img src="images/c4.jpeg">
+</div>
+
+<div class="mySlides">
+  <img src="images/c11.jpeg">
+</div>
+</div>
+<br>
+<div class="circle">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<h1> Some of Our Special Moments</h1>
+<div class="row">
+  <div class="column">
+    <img src="images/o2.jpeg" style="width:100%">
+	<p>Opening ceremoney of our cafe was done by Chh. Udyan Raje bhosale Maharaj it was wonderable moment for us.</p>
+  </div>
+  <div class="column">
+    <img src="images/b7.jpeg" style="width:100%">
+	<p>One of our customer celebrated their anniversary in our cafe. they enjoyed & collected bunch of memories.</p>
+  </div>
+  <div class="column">
+    <img src="images/b3.jpeg" style="width:100%">
+	<p>College students celebrated their friends birthday with some delicious menu of our in cafe. they had alot of fun.</p>
+  </div>
+</div>   
+
+<footer class="foot">
+  <ul class="socialicon">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+
+<ul class="menu2">
+        <li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+
+</ul>
+
+<p>Copyright 2024| All Right are Reserved </p>
+Developed By  Priyanka Pardeshi | Siddharth Bhanage
+</footer>
+ 
+ 
+ <script>
+ function myFunction() {
+  var x = document.getElementById("list");
+  if(x.style.display == "block")
+  {
+      x.style.display = "none";
+  }
+  else{
+     x.style.display = "block";
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+    
+ </script>
+ </body>
+</html>

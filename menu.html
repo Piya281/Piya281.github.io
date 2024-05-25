@@ -1,0 +1,637 @@
+<html>
+<head>
+<title>Menu</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+
+body{
+ font-family: comic sans ms;
+ background: url('images/pi.jpg') right no-repeat;
+ background-size: cover;
+ 
+}
+
+
+
+.navbar
+{
+background: orange;
+border-bottom: 2px solid orange;
+height: 90px;
+}
+
+.menu
+{
+ float: right;
+ 
+}
+
+.menu li
+{
+display: inline-block;
+list-style: none;
+margin-top: 10px;
+
+
+}
+
+
+.menu li a 
+{
+text-decoration: none;
+color: black;
+font-size: 22px;
+font-weight: bold;
+display: block;
+padding: 15px;
+}
+.menu li a:hover
+{
+text-transform: uppercase;
+transform: translateY(-10px);
+
+}
+
+
+p{
+  color: black;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: orange;
+  width: 34.5%;
+}
+
+
+
+img
+{
+width: 100px;
+height: 110px;
+margin-top: -20px;
+margin-bottom: 5px;
+margin-right: 100px;
+margin-left: 5px;
+background: black;
+
+
+}
+
+
+
+.foot{
+display: flex;
+justify-content: flex-end;
+align-item: flex-end;
+min-height: 30vh;
+opacity: 0.9;
+}
+
+footer
+{
+position: relative;
+width:100%;
+background: orange;
+min-height: 50px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+.foot .socialicon, .menu2
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-item: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+.foot .socialicon li
+{
+list-style: none;
+
+}
+.foot .socialicon li a
+{
+font-size: 2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+
+.foot .socialicon li a:hover
+{
+transform: translateY(-10px);
+}
+.menu2 li
+{
+list-style: none;
+}
+
+.menu2 li a
+{
+font-size: 1.2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+
+.menu2 li a:hover
+{
+opacity: 1;
+}
+
+
+h5
+{
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 15px;
+}
+
+h1{
+color: black;
+text-align: center;
+margin-top: 40px;
+margin-bottom: -30px;
+
+}
+.content{
+margin-top: 60px;
+margin-bottom: 50px;
+background: black;
+width: 80%;
+margin-left: 130px;
+border-radius: 20px;
+}
+.content h3
+{
+color: orange;
+margin-top: 20px;
+font-size: 28;
+text-decoration: underline;
+
+}
+
+
+.content tr
+{
+padding: 5px;
+}
+
+.content td
+{
+color: orange;
+padding-left: 30px;
+font-size: 20px;
+font-weight: bold;
+}
+
+button
+{
+padding: 4px 15px;
+margin-left: -80px;
+margin-right: 20px;
+background: #32CD32;
+font-weight: bold;
+font-size: 17px;
+ cursor: pointer;
+}
+
+.btn
+{
+margin-bottom: 20px;
+margin-top: -40px;
+float: right;
+margin-right: 190px;
+
+
+}
+
+.btn a
+{
+margin-right: auto;
+margin-left: 30px;
+}
+.view-btn
+{
+display: inline-block;
+margin-bottom: 10px;
+margin-top: 10px;
+border: 2px solid black;
+padding: 12px 20px;
+border-radius: 8px;
+text-decoration: none;
+color: black;
+font-size: 18px;
+text-transform: uppercase;
+background: orange;
+font-weight: 500;
+transition: .3s linear;
+margin-left: auto;
+margin-right: auto;
+}
+
+.view-btn:hover
+{
+background: #90EE90;
+transform: translateY(-10px);
+}
+
+.floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+}
+
+@media (max-width: 985px)
+{
+
+p
+ {
+  display: block;
+  margin-top: 15px;
+  margin-left: -30px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.navbar
+ {
+  padding: 0 20px;
+  background: orange;
+}
+.menu
+ {
+  position: absolute;
+  width: 30%;
+  height: 159%;
+  margin-top: 70px;
+  left: 0;
+  transition: all 0.5s;
+  background: orange;
+ 
+ 
+}
+.menu li a
+{
+color: black;
+padding: 8px;
+}
+
+.menu li a:hover
+{
+text-transform: uppercase;
+border-left: 1px solid black;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ 
+.menu li
+{
+ display: block;
+ margin-left: 5px;
+}
+
+.menu 
+{
+ display: none;
+}
+
+
+
+img
+{
+float: right;
+width: 110px;
+height: 110px;
+margin-right: -25px;
+}
+
+h1
+{
+text-align: center;
+marign-left: auto;
+margin-right: auto;
+}
+
+.content
+{
+margin-left: 50px;
+}
+
+
+.btn
+{
+margin-left: 10px;
+margin-right: 30px;
+
+}
+
+.view-btn
+{
+font-size: 14px;
+padding: 10px 10px;
+font-weight:bold;
+display: inline-block;
+}
+}
+
+
+</style>
+</head>
+ <body>
+  
+    <div class="navbar">
+    
+	<p onClick="myFunction()">&#9776;</p>
+	<img src="images/logo.jpeg">
+	<div class="menu" id="list">
+	 <nav>
+	   	<li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+		
+		
+		   <li><a href="./order.html">Order</a></li>
+
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+	  </nav>
+	</div>
+   </div>
+   <a href="https://api.whatsapp.com/send?phone=9764768981&text=Hello%21%20." class="floating" target="_blank"><i class="fa fa-whatsapp float-button"></i></a>
+   <h1>Our Menu Your Order</h1>
+   
+   <div>
+   
+   <table class="content">
+   
+    <ol start="1" class="mySlides">
+	<tr><td><h3>Tea</h3></td></tr>
+	<tr><td>Tea </td><td>20/- </td></tr>
+	<tr><td>Elaichi</td><td>20/-</td></tr>
+	<tr><td>Green Tea</td><td>30/-</td></tr>
+	<tr><td>Kesar Tea</td><td>30/-</td></tr>
+	<tr><td>Adrak Tea</td><td>30/-</td></tr>
+	<tr><td>Black Tea</td><td>20/-</td></tr>
+	<tr><td>Masala Tea</td><td>30/-</td></tr>
+	<tr><td>Lemon Tea</td><td>30/-</td></tr>
+	
+	<tr><td><h3>Ice Tea</h3></td></tr>
+	<tr><td>Italian Lemon Tea</td><td>40/-</td></tr>
+	<tr><td>Peach Ice Tea</td><td>50/-</td></tr>
+	<tr><td>Green Coffee Ice Tea</td><td>50/-</td></tr>
+	<tr><td>Strawberry Ice Tea</td><td>60/-</td></tr>
+	<tr><td>Watermelon Ice Tea</td><td>60/-</td></tr>
+	<tr><td>Blue Ocean Ice Tea</td><td>60/-</td></tr>
+	
+	<tr><td><h3>Coffee</h3></td></tr>
+	<tr><td>Creamy Cold Coffee</td><td>40/-</td></tr>
+	<tr><td>Creamy Cold Coffee <br>with Choc. Crush</td><td>50/-</td></tr>
+	<tr><td>Creamy Cold Coffee<br> with Ice-Cream</td><td>60/-</td></tr>
+	<tr><td>Creamy Natural Ice-Cream</td><td>80/-</td></tr>
+	<tr><td>True Love Creamy <br>Coffee(Rose Flower)</td><td>70/-</td></tr>
+	<tr><td>Friendship Creamy Coffee</td><td>70/-</td></tr>
+    <tr><td>Irish Creamy Coffee </td><td>100/-</td></tr>
+	<tr><td>Caramel Creamy Coffee</td><td>100/-</td></tr>
+	<tr><td>Milky Creamy Coffee</td><td>60/-</td></tr>
+	<tr><td>Mochaa Creamy Coffee</td><td>60/-</td></tr>
+	<tr><td>Mochaa Creamy Coffee <br>with Ice-Cream</td><td>80/-</td></tr>
+	<tr><td>French Vanilla Coffee</td><td>90/-</td></tr>
+	<tr><td>Black forest Creamy <br>Coffee</td><td>100/-</td></tr>
+	</ol>
+	
+	
+	
+	<ol start="28" class="mySlides">
+	<tr><td><h3>Shakes</h3></td></tr>
+	<tr><td>Vanilla Shake</td><td>60/-</td></tr>
+	<tr><td>Strawberry Shake</td><td>60/-</td></tr>
+	<tr><td>Pista Shake</td><td>60/-</td></tr>
+	<tr><td>Butterscotch Shake</td><td>70/-</td></tr>
+	<tr><td>Chocolate Shake</td><td>70/-</td></tr>
+	<tr><td>Mango Shake</td><td>70/-</td></tr>
+	<tr><td>Oreo Shake</td><td>80/-</td></tr>
+	<tr><td>Kit-Kat Shake</td><td>80/-</td></tr>
+	<tr><td>Rose Shake</td><td>80/-</td></tr>
+	<tr><td>Pineapple Shake</td><td>80/-</td></tr>
+	
+	<tr><td><h3>Chocolate Cream</h3></td></tr>
+	<tr><td>Cad-B </td><td>90/-</td></tr>
+	<tr><td>Cad-M</td><td>90/-</td></tr>
+	<tr><td>White Chocolate</td><td>100/-</td></tr>
+	<tr><td>Coconut Choc.</td><td>100/-</td></tr>
+	<tr><td>Kit-Kat Choc.</td><td>100/-</td></tr>
+	<tr><td>Oreo Choc.</td><td>100/-</td></tr>
+	<tr><td>Day-Night Choc.</td><td>110/-</td></tr>
+	<tr><td>Dry Fruit Choc.</td><td>20/-</td></tr>
+	<tr><td>Ferrero Choc.</td><td>130/-</td></tr>
+	<tr><td>Black Forest Choc.</td><td>150/-</td></tr>
+	
+	<tr><td><h3>Special Shots</h3></td></tr>
+	<tr><td>Hot Coffee</td><td>40/-</td></tr>
+	<tr><td>Hot Chocolate</td><td>40/-</td></tr>
+    <tr><td>Hot Mocha</td><td>40/-</td></tr>
+	<tr><td>Lrish</td><td>50/-</td></tr>
+	<tr><td>Cappuccino</td><td>50/-</td></tr>
+	<tr><td>Cappuccino Hozelnut</td><td>90/-</td></tr>
+    <tr><td>Cappuccino Irish </td><td>90/-</td></tr>
+	<tr><td>Caramel Hot</td><td>50/-</td></tr>
+	<tr><td>French Vanilla </td><td>50/-</td></tr>
+	<tr><td>Hozelnut Coffee</td><td>50/-</td></tr>
+	
+	</ol>
+	
+
+	
+	<ol start="58" class="mySlides">
+	<tr><td><h3>Chocolate Brownie</h3></td></tr>
+	<tr><td>Hot-Cool Brownie</td><td>130/-</td></tr>
+	<tr><td>Dry Fruit Hot-Cool<br> Brownie</td><td>150/-</td></tr>
+	<tr><td>Lrish hot-Cool Brownie</td><td>150/-</td></tr>
+	<tr><td>Caramel Hot-Cool</td><td>150/-</td></tr>
+	
+	<tr><td><h3>Mocktails</h3></td></tr>
+	<tr><td>Classic Mojito</td><td>100/-</td></tr>
+	<tr><td>Green Apple Mojito</td><td>100/-</td></tr>
+	<tr><td>Lemon Chilli Mojito</td><td>100/-</td></tr>
+	<tr><td>Red Apple Mojito </td><td>100/-</td></tr>
+	<tr><td>Blue Ocean Mojito</td><td>100/-</td></tr>
+	<tr><td>Watermelon Mojito</td><td>110/-</td></tr>
+	<tr><td>Peach Mojito</td><td>100/-</td></tr>
+	<tr><td>Raspberry Mojito</td><td>120/-</td></tr>
+	<tr><td>Chili Guava Mojito</td><td>130/-</td></tr>
+	
+	
+	<tr><td><h3>Special Blends</h3></td></tr>
+	<tr><td>Chocolate Shots</td><td>50/-</td></tr>
+	<tr><td>Choc. Shots With Hazelnuts</td><td>60/-</td></tr>
+	<tr><td>Thunder Punch </td><td>100/-</td></tr>
+	<tr><td>Oreo Punch</td><td>100/-</td></tr>
+	
+	<tr><td><h3>Pasta</h3></td></tr>
+	<tr><td>Red Sauce Pasta</td><td>70/-</td></tr>
+	<tr><td>White Sauce Pasta</td><td>70/-</td></tr>
+	
+	<tr><td><h3>Toste</h3></td></tr>
+	<tr><td>Cheese Chili Toste</td><td>80/-</td></tr>
+	<tr><td>BBQ Cheese chili Toste</td><td>80/-</td></tr>
+	<tr><td>Tandoori Paneer Toste</td><td>80/-</td></tr>
+	
+	<tr><td><h3>Maggie</h3></td></tr>
+	<tr><td>Maggie Plain</td><td>60/-</td></tr>
+	<tr><td>Veg Cheese Maggie</td><td>70/-</td></tr>
+	<tr><td>Corn Cheese Maggie</td><td>80/-</td></tr>
+    <tr><td>Peri-Peri Corn <br>Cheese Maggie</td><td>80/-</td></tr>
+	<tr><td>Soupy Maggie</td><td>80/-</td></tr>
+	</ol>
+	
+
+	<ol start="85" class="mySlides">
+	<tr><td><h3>Fries</h3></td></tr>
+	<tr><td>Salty French Fries</td><td>60/-</td></tr>
+	<tr><td>Masala French Fries</td><td>70/-</td></tr>
+	<tr><td>Schezwan Fries</td><td>70/-</td></tr>
+	<tr><td>Lemon Chili Fries</td><td>70/-</td></tr>
+	<tr><td>Chili Garlic Fries </td><td>80/-</td></tr>
+	<tr><td>Peri-Peri</td><td>80/-</td></tr>
+	<tr><td>Cheese Fries</td><td>80/-</td></tr>
+	<tr><td>Cheese Fries With Liquid</td><td>80/-</td></tr>
+	
+	<tr><td><h3>Pizza</h3></td></tr>
+	<tr><td>Choc. Pizza</td><td>110/-</td></tr>
+	<tr><td>Veg Cheese Pizza </td><td>120/-</td></tr>
+	<tr><td>Only Cheese Pizza</td><td>110/-</td></tr>
+	<tr><td>Tandoori Paneer Cheese Pizza </td><td>150/-</td></tr>
+	<tr><td>Paneer Pizza</td><td>160/-</td></tr>
+	<tr><td>Barbeque Paneer Cheese Pizza</td><td>160/-</td></tr>
+	<tr><td>Corn Cheese Pizza</td><td>150/-</td></tr>
+	<tr><td>Chili Cheese Pizza</td><td>150/-</td></tr>
+	<tr><td>Black olive Pizza</td><td>150/-</td></tr>
+	<tr><td>Backyard Special Pizza</td><td>170/-</td></tr>
+	
+	
+	<tr><td><h3>Veg Burger</h3></td></tr>
+	<tr><td>Aloo Tikki Burger</td><td>40/-</td></tr>
+	<tr><td>Veg Burger</td><td>70/-</td></tr>
+	<tr><td>Veg Cheese BurgeMaharajah Burger</td><td>100/-</td></tr>
+	
+	<tr><td><h3>Veg Sandwich</h3></td></tr>
+	<tr><td>Veg Sandwich</td><td>60/-</td></tr>
+	<tr><td>Chocolate Sandwich</td><td>70/-</td></tr>
+	<tr><td>Veg Cheese Grill Sandwich</td><td>70/-</td></tr>
+	<tr><td>Paneer Tandor Sandwich</td><td>80/-</td></tr>
+	<tr><td>Barbeque Paneer Sandwich</td><td>80/-</td></tr>
+	<tr><td>Corn Cheese Sandwich</td><td>80/-</td></tr>
+	<tr><td>Veg Corn Cheese Sandwich</td><td>80/-</td></tr>
+	<tr><td>Pahadi Grill Sandwich</td><td>80/-</td></tr>
+	<tr><td>Pizza Feeling Grill Sandwich</td><td>80/-</td></tr>
+	</ol>
+
+	
+
+	<ol start="115" class="mySlides">
+	<tr><td><h3>Ice-Cream</td><td>Half/Full</td></tr>
+	<tr><td>Vanilla </td><td>40/60/-</td></tr>
+	<tr><td>Chocolate </td><td>40/60/-</td></tr>
+	<tr><td>Pista</td><td>40/60/-</td></tr>
+	<tr><td>Butterscotch</td><td>40/60/-</td></tr>
+	<tr><td>Mango</td><td>40/60/-</td></tr>
+	<tr><td>Strawberry</td><td>40/60/-</td></tr>
+	</ol>
+    
+   </table>
+   <div class="btn">
+   
+	<a href="./order.html" class="view-btn"> Order Now</a>
+	</div>
+    </div>
+	
+
+<footer class="foot">
+<ul class="socialicon">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+
+<ul class="menu2">
+        <li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+
+</ul>
+
+<h5>Copyright 2024| All Right are Reserved </h5>
+Developed By Priyanka Pardeshi | Siddharth Bhanage
+
+
+</footer> 	
+
+
+ 
+ <script>
+ function myFunction() {
+  var x = document.getElementById("list");
+  if(x.style.display == "block")
+  {
+      x.style.display = "none";
+  }
+  else{
+     x.style.display = "block";
+  }
+}
+
+
+    
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+ 

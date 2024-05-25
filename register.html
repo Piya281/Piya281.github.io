@@ -1,0 +1,243 @@
+<html>
+<head>
+<title> Register </title>
+<style type="text/css">
+body{
+ font-family: comic sans ms;
+ margin: 20px 40px;
+ background: url('b5.jpg') right no-repeat;
+ background-size: cover;
+
+
+}
+
+#mainbox{
+  font-size: 24px;
+  cursor: pointer;
+  color: orange;
+  
+}
+
+.input a{
+  text-decoration: none;
+  float: right;
+  padding: 10px;
+  color: orange;
+  font-size: 20px;
+  margin-top: -39px;
+  font-weight:bold;
+}
+
+.input a:hover{
+  
+  border-left: 1px solid black;
+  box-shadow: 0 0 4px orange;
+}
+
+.sidemenu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0px;
+  background-color: orange;
+  opacity: 0.7;
+  z-index: 1;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.sidemenu a{
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  display: block;
+  
+  
+}
+
+.sidemenu a:hover{
+  text-transform: uppercase;
+  border-left: 1px solid black;
+  box-shadow: 0 0 4px black;
+}
+
+.sidemenu .closebtn{
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 32px;
+}
+
+#main-holder {
+  width: 50%;
+  height: 125%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: orange;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  opacity: 0.8;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+h1{
+ margin-top: 8px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-top: 20px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+input[type=date] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin-left: 80px ;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  
+}
+
+
+</style>
+</head>
+ <body>
+   <div class="topnav"></div>
+   <div id="mainbox" onclick="openfunction()"> &#9776; 
+   
+    </div>
+   </div>
+   <div class="input">
+   <a href="./login.html">Login</a>
+   <a href="./register.html">Register</a>
+   
+   </div>
+   
+  <div id="menu1" class="sidemenu">
+ 
+	    <a href="./index.html">Home</a>
+	    <a href="./about.html">About</a>
+	    <a href="./menu.html">Menu</a>
+	    <a href="./gallery.html">Gallery</a>
+	    <a href="./package.html">Packages</a>
+	    <a href="./contact.html">Contact</a>
+	    <a href="./term.html">Term & Condition</a>
+	    <a href="./feedback.html">Feedback</a>
+		<a href="#" class="closebtn" onclick="closefunction()">&times;</a>
+	</div>
+	 <main id="main-holder">
+	 <form >
+     <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	
+	<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Address</label>
+      </div>
+      <div class="col-75">
+       <input type="text" id="add" name="add" placeholder="Your address.."> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Contact no.</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="contact" name="contact" placeholder="Your contact no..">
+      </div>
+	 </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="subject">Birth-Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="birth" name="birth" placeholder="Birthdate..">
+      </div>
+	 </div>
+	 
+	 <div class="row">
+      <div class="col-25">
+        <label for="subject">Create Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="myInput" name="password" placeholder="Your password..">
+		
+      </div>
+	 </div>
+	 
+	<hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+ </body>
+ <script type="text/javascript">
+  function openfunction(){
+    document.getElementById("menu1").style.width="300px";
+	document.getElementById("mainbox").style.marginleft="300px";
+  }
+  
+  function closefunction(){
+    document.getElementById("menu1").style.width="0px";
+	document.getElementById("mainbox").style.marginleft="0px";
+	document.getElementById("mainbox").innerHTML="&#9776;"; 
+  }
+  
+  
+   
+ </script>
+</html>	

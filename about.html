@@ -1,0 +1,504 @@
+<html>
+<head>
+<title>About</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+
+body{
+ font-family: comic sans ms;
+ background: url('images/b5.jpg') right no-repeat;
+ background-size: cover;
+ 
+}
+
+
+
+.navbar
+{
+background: orange;
+border-bottom: 2px solid orange;
+height: 90px;
+}
+
+.menu
+{
+ float: right;
+ 
+}
+
+.menu li
+{
+display: inline-block;
+list-style: none;
+margin-top: 10px;
+
+
+}
+
+
+.menu li a 
+{
+text-decoration: none;
+color: black;
+font-size: 22px;
+font-weight: bold;
+display: block;
+padding: 15px;
+}
+.menu li a:hover
+{
+text-transform: uppercase;
+transform: translateY(-10px);
+
+}
+
+.submenu
+{
+display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: 10px;
+margin-left: -2px;
+}
+
+.menu li:hover .submenu ul
+{
+display: block;
+margin: 10px;
+}
+
+.menu li:hover .submenu ul li
+{
+display: block;
+width: 80px;
+padding: 1px;
+
+background: orange;
+border-radius: 0;
+text-align: center;
+}
+
+.menu li:hover .submenu ul li a
+{
+padding: 8px;
+}
+span{
+  color: black;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: orange;
+  width: 34.5%;
+}
+
+
+
+.navbar img
+{
+width: 100px;
+height: 110px;
+margin-top: -20px;
+margin-bottom: 5px;
+margin-right: 100px;
+margin-left: 5px;
+background: black;
+
+
+}
+
+h1
+{
+text-align: center;
+color: orange;
+margin-top: 20px;
+font-weight: bold;
+text-decoration: underline;
+font-size: 36px;
+}
+.about img
+{
+width: 350px;
+height: 325px;
+margin-top: 10px;
+margin-left: 80px;
+margin-right: 0px;
+margin-bottom: 10px;
+
+}
+
+.content h1
+{
+text-align: center;
+color: orange;
+margin-top: 20px;
+font-weight: bold;
+text-decoration: underline;
+font-size: 36px;
+}
+
+.content p
+
+{
+
+color: orange;
+margin-top: 20px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 90px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.row
+{
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.row .column{
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 30px;
+display: grid;
+
+width: 330px;
+height: 330px;
+}
+.column {
+  
+  width: 33.33%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.row .column img
+{
+margin-top: 20px;
+margin-right: -10px;
+width: 380px;
+height: 280px;
+border-radius: 10%;
+
+}
+
+
+.foot{
+display: flex;
+justify-content: flex-end;
+align-item: flex-end;
+min-height: 30vh;
+opacity: 0.9;
+}
+
+footer
+{
+position: relative;
+width:100%;
+background: orange;
+min-height: 50px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+.foot .socialicon, .menu2
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-item: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+.foot .socialicon li
+{
+list-style: none;
+
+}
+.foot .socialicon li a
+{
+font-size: 2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+
+.foot .socialicon li a:hover
+{
+transform: translateY(-10px);
+}
+.menu2 li
+{
+list-style: none;
+}
+
+.menu2 li a
+{
+font-size: 1.2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+
+.menu2 li a:hover
+{
+opacity: 1;
+}
+
+footer p
+{
+margin-top: 10px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+}
+
+@media (max-width: 924px)
+{
+
+ span
+ {
+  display: block;
+  margin-top: 15px;
+  margin-left: -50px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.navbar
+ {
+  padding: 0 20px;
+  background: orange;
+}
+.menu
+ {
+  position: absolute;
+  width: 30%;
+  height: 165%;
+  margin-top: 70px;
+  left: 0;
+  transition: all 0.5s;
+  background: orange;
+  
+ 
+}
+.menu li a
+{
+color: black;
+padding: 8px;
+}
+
+.menu li a:hover
+{
+text-transform: uppercase;
+border-left: 1px solid black;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ 
+.menu li
+{
+ display: block;
+ margin-left: 5px;
+}
+
+.menu 
+{
+ display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: -60px;
+margin-left: 140px;
+}
+
+
+.navbar img
+{
+float: right;
+width: 100px;
+height: 109px;
+margin-right: -25px;
+}
+
+.about
+{
+border-border: 1px solid orange;
+background: orange;
+margin-top: 20px;
+width: 40%;
+margin-left: 200px;
+margin-right: 80px;
+}
+.about img
+{
+height: 300px;
+width: 300px;
+margin-top: 40px;
+}
+
+.content h1
+{
+margin-top: 70px;
+}
+.content p
+{
+margin-top: 30px;
+font-size: 18;
+
+
+}
+
+.row .column {
+margin-left: 90px;
+}
+
+.row .column img
+{
+padding: 10px;
+}
+
+}
+
+
+</style>
+</head>
+ <body>
+  
+    <div class="navbar">
+    
+	<span onClick="myFunction()">&#9776;</span>
+	<img src="images/logo.jpeg">
+	<div class="menu" id="list">
+	 <nav>
+	   	<li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+		
+		  
+		   <li><a href="./order.html">Order</a></li>
+
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+	  </nav>
+	</div>
+   </div>
+   <a href="https://api.whatsapp.com/send?phone=9764768981&text=Hello%21%20." class="floating" target="_blank"><i class="fa fa-whatsapp float-button"></i></a>
+   <h1>Our Area</h1>
+   <div class="row">
+  <div class="column">
+    <img src="images/c1.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/c4.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/c11.jpeg" style="width:100%">
+  </div>
+</div>
+
+	<div class="content">
+	<h1>Our Story</h1>
+	<p>Yuvraj, means I was working in Pocket Café at Pimpri Chinchawad, Pune. But due to pandemic I came to my town and then after I planned that I will not go back to pune I will setup my own business but the question araised what will be the business??.. then after I planned for my own café as I work in café for 2 years. 
+               Founded on 10/10/2021 by Yuvraj Ithape , Backyard café is a online snacks ordering and Booking a place for celebrating your special day in café in thousand of cities in Maharashtra. Backyard Provides digital menu on its website from which customers can securely pay with the most options available out of all cafe e-commerce systems. A customer can book a café for the celebration. Backyard Café also provide decoration Packages where customer can book their package for decoration of café on their special day and can celebrate with full joy.
+</p>
+	
+</div>
+
+<footer class="foot">
+<ul class="socialicon">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+
+<ul class="menu2">
+        <li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+
+</ul>
+
+<p>Copyright 2024| All Right are Reserved </p>
+Developed By Priyanka Pardeshi | Siddharth Bhanage
+</footer>
+ 
+ 
+ <script>
+ function myFunction() {
+  var x = document.getElementById("list");
+  if(x.style.display == "block")
+  {
+      x.style.display = "none";
+  }
+  else{
+     x.style.display = "block";
+  }
+}
+    
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="logout.css">
+</head>
+<body>
+
+ <div class="navigation">
+	<img src="images/logo.jpeg" width="130" height="130">
+	<nav>
+	<li><a href="./dashboard.html">Dashboard</a></li>
+	 <li><a href="./orders.html">Order</a></li>
+<li><a href="./bookings.html">Booking</a></li>
+<li><a href="./enquirys.html">Enquiry</a></li>	 
+<li><a href="./msg.html">Feedback</a></li>
+<li><a href="./edit.html">Edit</a></li>
+<li><a href="./logout.html" onClick="logout()">Log Out</a></li>
+	</nav>
+	
+	</div>
+
+    <h1>BACKYARD CAFE 
+      <br/><small><em>Logout</em></small>
+	  <i class="fa fa-user-circle-o" style="font-size:48px;color: black"></i>
+	 </h1>
+	 
+	 <main id="main-holder">
+    <div class="logged-in" id="done">
+    <div class="success"><span>Do you want to Logout ?</span></div>
+   <button onclick="logout()">Logout</button>
+  </div>
+  </main>
+	 
+	 
+ <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+ <script src="logout.js"></script>
+
+
+
+
+
+</body>
+</html>

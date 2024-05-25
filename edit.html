@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="edit.css">
+  </head>
+  <body>
+  
+   <div class="navigation">
+	<img src="images/logo.jpeg" width="130" height="130">
+	<nav>
+	<li><a href="./dashboard.html">Dashboard</a></li>
+	 <li><a href="./orders.html">Order</a></li>
+<li><a href="./bookings.html">Booking</a></li>
+<li><a href="./enquirys.html">Enquiry</a></li>	 
+<li><a href="./msg.html">Feedback</a></li>
+<li><a href="./edit.html">Edit</a></li>
+<li><a href="./logout.html">Log Out</a></li>
+	</nav>
+	
+	</div>
+
+    <h1>BACKYARD CAFE 
+      <br/><small><em>Editing Menu </em></small>
+	  <i class="fa fa-user-circle-o" style="font-size:48px;color: black"></i>
+	 </h1>
+	 <div class="head">
+	 <nav>
+	   <li><a href="./edit.html">Food-Item</a></li>
+	   
+	   </nav>
+	 </div>
+	 
+	     <div class="container">
+  <form id="editForm">
+  <h2>New Update</h2>
+    <div class="alert"> Updated Successfully!!</div>
+       <div class="row">
+         
+        <label for="item"><b>Food Item</b></label>
+         <input type="text" id="item" name="item" placeholder="Food Item" required>
+       
+        <label for="price"><b>Price</b></label>
+        <input type="text" id="price" name="price" placeholder="Price" required>
+      
+        
+     
+    <div class="row2">
+      <button type="submit">Add</button>
+      <button type="submit">Update</button>
+      <button type="submit">Delete</button>
+	  </div>
+	 </div>
+	 </form>
+	</div>
+	<hr>
+	 
+	
+	
+
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script type="text/javascript" src="edit.js"></script>
+  <script>
+    //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+   function myFunction() {
+    var x = document.getElementById("list");
+    if(x.style.display == "block")
+    {
+        x.style.display = "none";
+    }
+    else{
+       x.style.display = "block";
+    }
+  }
+      
+   </script>
+
+</html>

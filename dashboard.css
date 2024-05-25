@@ -1,0 +1,106 @@
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+		
+	background: #d9ffb3;
+    font-family: Arial, sans-serif;
+    }
+    
+	.navigation
+	{
+	 width: 15%;
+     position: fixed;
+     height: 100%;	
+     background-color: black;	 
+	}
+	
+	.navigation img
+	{
+		
+	margin-top: -20px;
+	margin-left: 30px;	
+	}
+	
+	.navigation nav li
+	{
+	padding: 15px;	
+	}
+	
+	.navigation nav li a
+	{
+		
+	color: orange;
+    text-decoration: none;	
+	font-size: 18px;
+    font-weight: bold;	
+	}
+	
+	.navigation nav li a:hover
+	{
+		transform: translateY(-10px);
+	}
+	
+    h1 {
+    padding: 10px;
+    background: #ffcc00;
+	margin-left: 190px;
+    }
+	
+
+	h3
+	{
+		text-align: center;
+		margin-left: -680px;
+		font-weight: bold;
+		font-size: 28px;
+		margin-bottom: -10px;
+		
+	}
+	
+	h2
+	{
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+		margin-top: -30px;
+	}
+	
+        i
+        {
+             float: right;
+             margin-right: 25px;
+             margin-top: -25px;
+             cursor: pointer;
+            
+        }
+	h4
+	{
+		font-size: 34px;
+	}
+	
+	
+    
+    p 
+	{
+		font-size: 60px;
+	    font-style: italic;
+		font-weight: bold;
+		margin-left: 340px;
+		margin-right: 90px;
+		margin-top: 120px;
+		
+		
+		
+	}
+	
+	hr
+	{
+		border: 1px solid black;
+		margin-top: 120px;
+		
+	}
+ 
+  

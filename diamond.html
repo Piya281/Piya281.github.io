@@ -1,0 +1,497 @@
+<html>
+<head>
+<title>Feedback</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+
+body{
+ font-family: comic sans ms;
+ background: url('images/b5.jpg') right no-repeat;
+ background-size: cover;
+ 
+}
+
+
+
+.navbar
+{
+background: orange;
+border-bottom: 2px solid orange;
+
+height: 90px;
+}
+
+.menu
+{
+ float: right;
+ 
+}
+
+.menu li
+{
+display: inline-block;
+list-style: none;
+margin-top: 10px;
+
+
+}
+
+
+.menu li a 
+{
+text-decoration: none;
+color: black;
+font-size: 22px;
+font-weight: bold;
+display: block;
+padding: 15px;
+}
+.menu li a:hover
+{
+text-transform: uppercase;
+transform: translateY(-10px);
+
+}
+
+.submenu
+{
+display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: 10px;
+margin-left: -2px;
+}
+
+.menu li:hover .submenu ul
+{
+display: block;
+margin: 10px;
+}
+
+.menu li:hover .submenu ul li
+{
+display: block;
+width: 80px;
+padding: 1px;
+
+background: orange;
+border-radius: 0;
+text-align: center;
+}
+
+.menu li:hover .submenu ul li a
+{
+padding: 8px;
+}
+span{
+  color: black;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: orange;
+  width: 34.5%;
+}
+
+
+
+.navbar img
+{
+width: 100px;
+height: 110px;
+margin-top: -20px;
+margin-bottom: 5px;
+margin-right: 100px;
+margin-left: 5px;
+background: black;
+
+
+}
+
+
+
+.foot{
+display: flex;
+justify-content: flex-end;
+align-item: flex-end;
+min-height: 30vh;
+opacity: 0.9;
+margin-top: 30px;
+}
+
+footer
+{
+position: relative;
+width: 100%;
+background: orange;
+min-height: 50px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+.foot .socialicon, .menu2
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-item: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+.foot .socialicon li
+{
+list-style: none;
+
+}
+.foot .socialicon li a
+{
+font-size: 2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+
+.foot .socialicon li a:hover
+{
+transform: translateY(-10px);
+}
+.menu2 li
+{
+list-style: none;
+}
+
+.menu2 li a
+{
+font-size: 1.2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+
+.menu2 li a:hover
+{
+opacity: 1;
+}
+
+.h5
+{
+margin-top: 10px;
+margin-bottom: 20px;
+font-size: 15px;
+}
+
+.content 
+{
+margin-top: 30px;
+margin-bottom: 40px;
+float: left;
+margin-left: 20px;
+
+}
+
+.content img
+{
+border-radius: 20px;
+height: 600px;
+width: 500px;
+margin-right: 20px;
+}
+
+h1
+{
+text-align: center;
+color: orange;
+font-weight: bold;
+margin-top: 20px;
+font-size: 38;
+}
+
+.info p
+{
+margin-left: 40px;
+}
+.info li
+{
+color: orange;
+justify-content: right;
+font-size: 22;
+margin-top: 40px;
+margin-left: 20px;
+
+}
+
+.btn
+{
+margin-bottom: 20px;
+margin-top: 20px;
+
+
+}
+
+.btn a
+{
+margin-right: auto;
+margin-left: 30px;;
+}
+.view-btn
+{
+display: inline-block;
+margin-bottom: 10px;
+margin-top: 10px;
+border: 2px solid black;
+padding: 12px 20px;
+border-radius: 8px;
+text-decoration: none;
+color: black;
+font-size: 18px;
+text-transform: uppercase;
+background: orange;
+font-weight: 500;
+transition: .3s linear;
+margin-left: auto;
+margin-right: auto;
+}
+
+.view-btn:hover
+{
+background: #90EE90;
+transform: translateY(-10px);
+}
+
+.floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+}
+@media (max-width: 924px)
+{
+
+ span
+ {
+  display: block;
+  margin-top: 15px;
+  margin-left: -60px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.navbar
+ {
+  padding: 0 20px;
+  background: orange;
+}
+.menu
+ {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  margin-top: 70px;
+  left: 0;
+  transition: all 0.5s;
+  background: orange;
+ 
+ 
+}
+.menu li a
+{
+color: black;
+padding: 8px;
+}
+
+.menu li a:hover
+{
+text-transform: uppercase;
+border-left: 1px solid black;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ 
+.menu li
+{
+ display: block;
+ margin-left: 5px;
+}
+
+.menu 
+{
+ display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: -60px;
+margin-left: 140px;
+}
+
+.navbar img
+{
+float: right;
+width: 130px;
+height: 130px;
+margin-right: -25px;
+}
+
+
+.container
+{
+width: 90%;
+height: 90%;
+margin-bottom: 40px;
+}
+
+h1
+{
+font-size: 28px;
+margin-left: 140px;
+margin-right: 10px;
+}
+
+.content img
+{
+height: 420px;
+width: 420px;
+margin-left: 10px;
+margin-right: -10px;
+}
+}
+
+
+</style>
+</head>
+ <body>
+  
+    <div class="navbar">
+    
+	<span onClick="myFunction()">&#9776; </span>
+	<img src="images/logo.jpeg">
+	<div class="menu" id="list">
+	 <nav>
+	   	<li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+		
+    
+		   <li><a href="./order.html">Order</a></li>
+
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+	  </nav>
+	</div>
+   </div>
+   <a href="https://api.whatsapp.com/send?phone=9764768981&text=Hello%21%20." class="floating" target="_blank"><i class="fa fa-whatsapp float-button"></i></a>
+     	<h1>Diamond Package </h1>              
+    <div class="content">
+  <img src="images/w2.jpeg">
+	</div>
+	<div class="info">
+  <p><li>Ideal for all kinds of party decorations
+  </li>
+  <li> The black and golden birthday banner is made with high quality card paper. You can combine this with our "Backyard" other items like crown or tiara for girls, alphabet/ letters foil baloon, number foil balloon, metallic or latex balloons, confetti ballun, star heart or any shape ballon, birhday cake toppers, inflating baloon pump hand or electric, any colour like rose gold, black, silver, golden, red fringe foil curtain, popper, stickers, photo booth props, balloon curling ribbon roll etc.
+  </li>
+  <li>You can use our different balloon accessories like balloon stand, ballon glue dot, ballon curling ribbons, balloons streamers, printed balloons, balloon pump manual and electric to inflate baloons.These will surely make your decoration stand out. This set can be used for different theme like boys bhirthday 1st/first, quarantine bday celebration, boys 2nd birthday, boys 3rd birthday, boys 4th bithday, boys 6th birthdays boys 7th birthday, boys 8th birthday, husband 30th bday, husband 40th bday.
+ </li>
+ <li>WHAT TO FILL WITH: balloons can be filled with air and helium. These balloons filled with AIR will stay full for up to 72 hours, while with HELIUM will stay full for 3-6 hours.
+ </li>
+ <li>Premium Quality Party balloons- This is made of pure latex, 2.8g/pcs, very strong and durable, easy to blow up and decor your any party.
+ </li>
+ <li>A SUCCESSFUL HAPPY PARTY IS OUR GOAL: We are committed to providing you only the best quality party supplies for any theme. With a dedicated team that excels at the customer experience, we are confident we can give you the event of your dreams!
+ </li>
+ <li>Backyard Exclusive Decoration supplies of stylish ballon can be combined with our different items like small cake decorative, candles, caps, topper, photo booth props, boys or girls birthday sash, explosion box accesories,girl monthly banners for different years, confetti baloon, gold and black swirls hanging decoration, silver fringe foil curtains combos, blue paper fans decors , led string lights for men.
+</li>
+<li>Want to capture a fabulous party Instagram picture for your dear one?? buy this… click and post !!! TAG US @backyard_cafe_satara_. You are just one step away.
+</li>
+</p>
+</div>
+
+<div class="btn">
+	<a href="./booking.html" class="view-btn"> Book Now</a>
+	</div>
+  
+  <footer class="foot">
+<ul class="socialicon">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+
+<ul class="menu2">
+        <li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+
+</ul>
+
+<h5>Copyright 2024| All Right are Reserved </h5>
+Developed By Priyanka Pardeshi | Siddharth Bhanage
+
+</footer> 	
+<script src="js/feed.js"></script>
+ <script>
+ function myFunction() {
+  var x = document.getElementById("list");
+  if(x.style.display == "block")
+  {
+      x.style.display = "none";
+  }
+  else{
+     x.style.display = "block";
+  }
+}
+    
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+ 

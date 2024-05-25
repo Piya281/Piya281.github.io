@@ -1,0 +1,171 @@
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+		
+	background: #d9ffb3;
+    font-family: Arial, sans-serif;
+    }
+    
+	.navigation
+	{
+	 width: 15%;
+     position: fixed;
+     height: 100%;	
+     background-color: black;	 
+	}
+	
+	.navigation img
+	{
+		
+	margin-top: -20px;
+	margin-left: 30px;	
+	}
+	
+	.navigation nav li
+	{
+	padding: 15px;	
+	}
+	
+	.navigation nav li a
+	{
+		
+	color: orange;
+    text-decoration: none;	
+	font-size: 18px;
+    font-weight: bold;	
+	}
+	
+	.navigation nav li a:hover
+	{
+		transform: translateY(-10px);
+	}
+	
+    h1 {
+    padding: 10px;
+    background: #ffcc00;
+	margin-left: 190px;
+    }
+	
+    .head
+	{
+		background-color: blue;
+		margin-top: -10px;
+		height: 50px;
+        margin-left: 190px;
+       
+	}
+	
+	.head li
+	{
+		display: inline-block;
+        list-style: none;
+
+		margin-right: auto;
+	}
+	
+	.head li a
+	{
+		text-decoration: none;
+        color: white;
+        font-size: 20px;
+       font-weight: bold;
+       display: block;
+        padding: 15px;
+	}
+	
+	.head li a:hover
+	{
+		background: #6495ED;
+		
+	}
+
+	h3
+	{
+		text-align: center;
+		margin-left: -680px;
+		font-weight: bold;
+		font-size: 28px;
+		margin-bottom: -10px;
+		
+	}
+	
+	h2
+	{
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+		margin-top: -30px;
+	}
+	
+        i
+        {
+             float: right;
+             margin-right: 25px;
+             margin-top: -25px;
+             cursor: pointer;
+            
+        }
+	h4
+	{
+		font-size: 34px;
+	}
+    
+	h2
+	{
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	.alert
+{
+text-align: center;
+padding: 10px;
+background: green;
+color: white;
+margin-top: 10px;
+margin-bottom: 20px;
+width: 30%;
+margin-left: 120px;
+margin-right: auto;
+display: none;
+}
+	
+    .container
+	{
+		margin-left: 290px;
+		margin-top: 40px;
+
+
+	}
+ 
+     input[type=text]
+	 {
+		 padding: 12px 12px 12px 12px;
+		 font-size: 15px;
+	 }
+	 
+	 button {
+  background-color: tomato;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 90px;
+  
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+hr
+{
+	border: 1px solid black;
+	margin-top: 20px;
+}
+

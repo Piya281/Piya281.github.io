@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+  <style>
+    body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+		
+	background: #d9ffb3;
+    font-family: Arial, sans-serif;
+    }
+    
+	.navigation
+	{
+	 width: 15%;
+     position: fixed;
+     height: 100%;	
+     background-color: black;	 
+	}
+	
+	.navigation img
+	{
+		
+	margin-top: -20px;
+	margin-left: 30px;	
+	}
+	
+	.navigation nav li
+	{
+	padding: 15px;	
+	}
+	
+	.navigation nav li a
+	{
+		
+	color: orange;
+    text-decoration: none;	
+	font-size: 18px;
+    font-weight: bold;	
+	}
+	
+	.navigation nav li a:hover
+	{
+		transform: translateY(-10px);
+	}
+	
+    h1 {
+    padding: 10px;
+    background: #ffcc00;
+	margin-left: 190px;
+    }
+	
+	h3
+	{
+		text-align: center;
+		margin-left: -680px;
+		font-weight: bold;
+		font-size: 28px;
+		margin-bottom: -10px;
+		
+	}
+	
+	h2
+	{
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+		margin-top: -30px;
+	}
+	
+        i
+        {
+             float: right;
+             margin-right: 25px;
+             margin-top: -25px;
+             cursor: pointer;
+            
+        }
+	h4
+	{
+		font-size: 34px;
+	}
+    
+    /*----------------------*/
+    /* Read Users */
+    /*----------------------*/
+    
+    
+    #userList {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    float: left;
+    margin: 10px;
+    border: 1px solid #a6ff4d;
+	width: 30%;
+	height: 50%;
+	margin-left: 230px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 23px;
+    }
+    
+    
+    #userList h2 {
+    padding: 10px;
+    color: black;
+	text-align: center;
+    }
+    
+    
+    #userList li {
+    padding: 5px 10px;
+    border-top: 1px solid #a6ff4d;
+    cursor: pointer;
+    color: black;
+    font-style: italic;
+	list-style: none;
+    }
+    
+    
+    
+    #userList li:hover {
+    background: #a6ff4d;
+    }
+    
+    #userDetail {
+    float: left;
+    width: 500px;
+	height: 288px;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+    border: 1px solid #a6ff4d;
+    color: black;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+    }
+ 
+    .row
+	{
+	  margin-left: 290px;
+      margin-right: auto;	  
+		
+	}
+    .column {
+  
+  width: 20%;
+  height: 5%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+    
+	
+  </style>
+   <div class="navigation">
+	<img src="images/logo.jpeg" width="130" height="130">
+	<nav>
+	<li><a href="./dashboard.html">Dashboard</a></li>
+	 <li><a href="./orders.html">Order</a></li>
+<li><a href="./bookings.html">Booking</a></li>
+<li><a href="./enquirys.html">Enquiry</a></li>	 
+<li><a href="./msg.html">Feedback</a></li>
+<li><a href="./edit.html">Edit</a></li>
+<li><a href="./login1.html">Log Out</a></li>
+	</nav>
+	
+	</div>
+
+    <h1>BACKYARD CAFE 
+      <br/><small><em>Booking Details</em></small>
+	  <i class="fa fa-user-circle-o" style="font-size:48px;color: black"></i>
+	 </h1>
+	
+     <div class="filter" style="margin-left: 35%; margin-top: 2%;">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate">
+        <button onclick="filterOrders()">Filter</button>
+      </div>
+	
+<div class="detail">
+<h3>Booking</h3>
+    <ul id="userList"></ul>
+<h2>Details</h2>
+    <div id="userDetail">
+	
+     <!-- <p >Name :<strong class="detailName"></strong></p> -->
+    </div>
+   </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script type="text/javascript" src="booking.js"></script>
+</html>

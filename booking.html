@@ -1,0 +1,509 @@
+<html>
+<head>
+<title>Booking</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ outline: none;
+}
+
+body{
+ font-family: comic sans ms;
+ background: url('images/b5.jpg') right no-repeat;
+ background-size: cover;
+ 
+}
+
+
+
+.navbar
+{
+background: orange;
+border-bottom: 2px solid orange;
+height: 90px;
+}
+
+.menu
+{
+ float: right;
+ 
+}
+
+.menu li
+{
+display: inline-block;
+list-style: none;
+margin-top: 10px;
+
+
+}
+
+
+.menu li a 
+{
+text-decoration: none;
+color: black;
+font-size: 22px;
+font-weight: bold;
+display: block;
+padding: 15px;
+}
+.menu li a:hover
+{
+text-transform: uppercase;
+transform: translateY(-10px);
+
+}
+
+.submenu
+{
+display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: 10px;
+margin-left: -2px;
+}
+
+.menu li:hover .submenu ul
+{
+display: block;
+margin: 10px;
+}
+
+.menu li:hover .submenu ul li
+{
+display: block;
+width: 80px;
+padding: 1px;
+
+background: orange;
+border-radius: 0;
+text-align: center;
+}
+
+.menu li:hover .submenu ul li a
+{
+padding: 8px;
+}
+span{
+  color: black;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  background: orange;
+  width: 34.5%;
+}
+
+
+
+.navbar img
+{
+width: 100px;
+height: 110px;
+margin-top: -20px;
+margin-bottom: 5px;
+margin-right: 100px;
+margin-left: 5px;
+background: black;
+
+
+}
+.about img
+{
+width: 350px;
+height: 325px;
+margin-top: 10px;
+margin-left: 80px;
+margin-right: 0px;
+margin-bottom: 10px;
+
+}
+
+.content h1
+{
+text-align: center;
+color: orange;
+margin-top: 20px;
+font-weight: bold;
+text-decoration: underline;
+font-size: 36px;
+}
+
+.content p
+
+{
+text-align: center;
+color: orange;
+margin-top: 20px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 90px;
+margin-left:20px;
+margin-right: 20px;
+}
+
+.foot{
+display: flex;
+justify-content: flex-end;
+align-item: flex-end;
+min-height: 30vh;
+opacity: 0.9;
+}
+
+footer
+{
+position: relative;
+width:100%;
+background: orange;
+min-height: 50px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+
+.foot .socialicon, .menu2
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-item: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+.foot .socialicon li
+{
+list-style: none;
+
+}
+.foot .socialicon li a
+{
+font-size: 2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+
+.foot .socialicon li a:hover
+{
+transform: translateY(-10px);
+}
+.menu2 li
+{
+list-style: none;
+}
+
+.menu2 li a
+{
+font-size: 1.2em;
+color: black;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+}
+
+.menu2 li a:hover
+{
+opacity: 1;
+}
+
+footer p
+{
+margin-top: 10px;
+margin-bottom: 20px;
+font-size: 15px;
+font-weight: bold;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #bfbfbf;
+  padding: 20px;
+  margin-top: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+h1
+{
+text-align: center;
+
+}
+
+
+
+input[type=text], [type=date],[type=email],select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: tomato;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.alert
+{
+text-align: center;
+padding: 10px;
+background: green;
+color: white;
+margin-top: 10px;
+margin-bottom: 5px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+display: none;
+}
+
+.floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+}
+
+@media (max-width: 985px)
+{
+
+ span
+ {
+  display: block;
+  margin-top: 15px;
+  margin-left: -50px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.navbar
+ {
+  padding: 0 20px;
+  background: orange;
+}
+.menu
+ {
+  position: absolute;
+  width: 30%;
+  height: 155%;
+  margin-top: 70px;
+  left: 0;
+  transition: all 0.5s;
+  background: orange;
+  
+ 
+}
+.menu li a
+{
+color: black;
+padding: 8px;
+}
+
+.menu li a:hover
+{
+text-transform: uppercase;
+border-left: 1px solid black;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ 
+.menu li
+{
+ display: block;
+ margin-left: 5px;
+}
+
+.menu 
+{
+ display: none;
+}
+
+.menu li:hover .submenu
+{
+display: block;
+position: absolute;
+background: orange;
+margin-top: -60px;
+margin-left: 140px;
+}
+
+
+.navbar img
+{
+float: right;
+width: 100px;
+height: 109px;
+margin-right: -25px;
+}
+
+.container
+{
+width: 80%;
+height: 105%;
+}
+
+}
+
+
+</style>
+</head>
+ <body>
+  
+    <div class="navbar">
+    
+	<span onClick="myFunction()">&#9776;</span>
+	<img src="images/logo.jpeg">
+	<div class="menu" id="list">
+	 <nav>
+	   	<li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+		
+		  
+		   <li><a href="./order.html">Order</a></li>
+
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+	  </nav>
+	</div>
+   </div>
+   <a href="https://api.whatsapp.com/send?phone=9764768981&text=Hello%21%20." class="floating" target="_blank"><i class="fa fa-whatsapp float-button"></i></a>
+   <div class="container">
+    <form id="bookingForm">
+	<h1>Package Booking Form </h1>
+	<div class="alert"> Booking Completed Successfully!!</div>
+     <div class="input">
+     <label>Name</label>
+     <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+     <label>Contact No.</label>
+     <input type="text" id="contact" name="contact" placeholder="Your Contact.." required>	
+
+      <label>Email</label>
+     <input type="email" id="email" name="email" placeholder="Your email.." required>	
+
+      <label for="type">Packagee</label>
+    <select id="packagee" name="type" required>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="diamond">Diamond</option>
+    </select>
+
+     <label>Booking Date</label>
+     <input type="date" id="date" name="date" placeholder="Booking Date" required>	
+
+<label for="time">Booking Time</label>
+    <select id="time" name="time" required>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+    </select>
+	
+	<button type="submit">Submit</button>
+</div>	
+ </form>   
+   </div>
+
+<footer class="foot">
+<ul class="socialicon">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+
+<ul class="menu2">
+        <li><a href="./index.html">Home </a></li>
+	    <li><a href="./about.html">About</a></li>
+	    <li><a href="./menu.html">Menu</a></li>
+	    <li><a href="./gallery.html">Gallery</a></li>
+	    <li><a href="./package.html">Packages</a></li>
+	    <li><a href="./contact.html">Contact</a></li>
+	    <li><a href="./feedback.html">Feedback</a></li>
+
+</ul>
+
+<p>Copyright 2024| All Right are Reserved </p>
+Developed By Priyanka Pardeshi | Siddharth Bhanage
+</footer>
+ <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 	
+ <script src="booking (1).js"></script>
+ <script>
+  //Get the button
+var mybutton = document.getElementById("myBtn");
+
+ function myFunction() {
+  var x = document.getElementById("list");
+  if(x.style.display == "block")
+  {
+      x.style.display = "none";
+  }
+  else{
+     x.style.display = "block";
+  }
+}
+    
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
+
+ 
